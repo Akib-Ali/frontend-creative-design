@@ -1,0 +1,417 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+.banner-img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.carousel .thumb {
+    width: 100px !important;
+    height: 100px !important;
+}
+
+.carousel .thumb img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* latest project */
+
+.latest-project-container {
+    display: flex;
+    height: 300px;
+    margin-top: 50px;
+    gap: 5px
+}
+
+.latest-project-leftside-design {
+    position: relative;
+    width: 30%;
+    height: 300px;
+    /* Adjust height */
+    background-color: black;
+    clip-path: polygon(0 0, 100% 0, 0 100%);
+}
+
+.latest-project-content {
+    width: 50%;
+    height: 200px;
+    margin-top: 50px;
+    text-align: center;
+}
+
+
+/* projects */
+
+.work {
+    margin-top: 25px;
+}
+
+.row.no-gutters [class*=col-] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.img-wrapper {
+    overflow: hidden;
+}
+
+.img-wrapper img {
+    height: 220px;
+    width: 400px;
+    transition: transform 0.5s ease;
+}
+
+.img-wrapper img:hover {
+    transform: scale(1.5);
+    cursor: 200min;
+}
+
+
+/* our design process */
+
+.desing-process-container {
+    width: 80%;
+    height: 70px;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    color: white;
+    border-radius: 50px 10px;
+
+}
+
+.design-process {
+    color: white;
+    text-align: center;
+}
+
+.container img {
+    width: 100%;
+    height: auto;
+}
+
+.controll-text-design-process {
+    text-align: center;
+}
+
+
+/* testimonial */
+
+.slick-slider {
+    overflow: hidden;
+}
+
+
+.testimonial-bg {
+    width: 100%;
+    margin-top: 50px;
+    background-image: url("/public/images/testimonial-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.95;
+    padding: 20px 0;
+}
+
+.testimonial-review {
+    color: white;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.card {
+    border: none;
+    background-color: transparent;
+    color: white;
+    margin: 0 auto;
+    width: 70%;
+    min-height: 350px;
+}
+
+.card-body {
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.card-img-top img {
+    margin-top: 20px;
+}
+
+
+/* contact us banner */
+
+.contact-us-banner {
+    height: 300px;
+    width: 100%;
+    background-image: url("https://archiadvisor.com/wp-content/uploads/2019/02/hall.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+}
+
+.contact-banner-content {
+    display: flex;
+    color: white;
+    gap: 10px;
+    padding: 20px;
+}
+
+.contact-us-maincontainer {
+    margin-top: 30px;
+    height: 500px;
+    width: 100%;
+    padding-top: 30px;
+    background-color: black;
+}
+
+.label {
+    color: white
+}
+
+.form-group {
+    margin-top: 5px;
+}
+
+#submitbtn {
+    color: white;
+    background-color: #C96868;
+    margin-top: 10px;
+
+}
+
+
+.map-responsive {
+    position: relative;
+    overflow: hidden;
+    /* padding-bottom: 56.25%;  */
+    height: 300px;
+}
+
+.map-responsive iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+}
+
+
+
+
+.contact-location {
+    height: 600px;
+    width: 100%;
+    background-image: url("/public/images/contact-us-bg.jpg");
+    background-size: cover;
+    /* Ensures the whole image fits in the container */
+    background-repeat: no-repeat;
+    background-position: center;
+    /* Centers the image */
+}
+
+.ist-address {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    height: 150px;
+    width: 100%;
+    /* border:2px solid red; */
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.right-side-container {
+    width: 300px;
+    /* border:2px solid red; */
+    padding-top: 30px;
+}
+
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    height: 150px;
+    width: 100%;
+    /* border:2px solid red; */
+    margin-top: 100px;
+    padding: 20px;
+    flex-wrap: wrap;
+
+}
+
+.left-side-contact {
+    width: 300px;
+    font-size: 20px;
+
+    /* border: 2px solid red; */
+}
+
+.right-side-contact {
+    width: 400px;
+    /* border:2px solid red; */
+    padding-top: 10px;
+    /* border:2px solid grey */
+}
+
+
+/* animated button start */
+
+/* Animated button style */
+.animated-button {
+    position: relative;
+    display: inline-block;
+    padding: 5px 20px;
+    margin-top: 10px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-decoration: none;
+    font-size: 24px;
+    overflow: hidden;
+    transition: 0.2s;
+    border: none; /* Remove full border */
+    background-color: black; /* Set button background color */
+  }
+  
+  /* Initial border appearance */
+  .animated-button span {
+    position: absolute;
+    display: block;
+    /* background: #2196f3;  */
+    background: linear-gradient(90deg, cyan, magenta, yellow, lime); /* Multi-color gradient */
+  
+  
+  }
+  
+  /* Top left L-shape */
+  .animated-button span:nth-child(1) {
+    top: 0;
+    left: 0;
+    width: 20px; /* L-shape width */
+    height: 2px; /* L-shape thickness */
+  }
+  
+  .animated-button span:nth-child(2) {
+    top: 0;
+    left: 0;
+    width: 2px; /* L-shape thickness */
+    height: 20px; /* L-shape height */
+  }
+  
+  /* Bottom right L-shape */
+  .animated-button span:nth-child(3) {
+    bottom: 0;
+    right: 0;
+    width: 20px; /* L-shape width */
+    height: 2px; /* L-shape thickness */
+  }
+  
+  .animated-button span:nth-child(4) {
+    bottom: 0;
+    right: 0;
+    width: 2px; /* L-shape thickness */
+    height: 20px; /* L-shape height */
+  }
+  
+  /* Animation on hover to complete the border */
+  .animated-button:hover span:nth-child(1) {
+    width: 100%; /* Expand width to cover entire top */
+    transition: 0.5s;
+  }
+  
+  .animated-button:hover span:nth-child(2) {
+    height: 100%; /* Expand height to cover entire left side */
+    transition: 0.5s;
+    transition-delay: 0.25s;
+  }
+  
+  .animated-button:hover span:nth-child(3) {
+    width: 100%; /* Expand width to cover entire bottom */
+    transition: 0.5s;
+    transition-delay: 0.5s;
+  }
+  
+  .animated-button:hover span:nth-child(4) {
+    height: 100%; /* Expand height to cover entire right side */
+    transition: 0.5s;
+    transition-delay: 0.75s;
+  }
+
+
+  /* blog banner */
+
+  .blog-banner {
+    height: 400px;
+    width: 100%;
+    background-image: url("/public/images/blog-banner.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: center;
+  
+  }
+  
+  .blog-banner-content {
+    display: flex;
+    color: white;
+    gap: 10px;
+    padding: 20px;
+  }
+
+  .our-blogs {
+    font-size: 20px;
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+    color: #C96868;
+  }
+
+  .blog-card {
+    height: 400px;
+    width: 300px;
+    /* border: 2px solid red; */
+  
+  }
+  
+  .blog-content {
+    padding: 7px;
+  }
+  
+  .blog-para-1 {
+    font-size: 16px;
+    font-weight: 600;
+  }
+  
+  .blog-address {
+    font-size: 18px;
+    font-weight: 700;
+    padding-top: 0px;
+  }
+
+  .blog-img-div {
+    overflow: hidden;
+  
+  }
+  
+  .blog-img-div img {
+    height: 220px;
+    width: 400px;
+    transition: transform 0.5s ease;
+  }
+  
+  .blog-img-div img:hover {
+    transform: scale(1.5);
+    cursor: 200min;
+  }
+  
+  
+  
+

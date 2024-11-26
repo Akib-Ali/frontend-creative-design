@@ -1,0 +1,183 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+/* Sidebar container */
+.sidebar {
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  transition: width 0.3s ease;
+}
+
+/* Sidebar collapsed */
+.sidebar.collapsed {
+  width: 180px; /* Slim view */
+}
+
+/* Sidebar expanded */
+.sidebar.expanded {
+  width: 250px; /* Full view */
+}
+
+/* Close button styling */
+.close-btn {
+  align-self: flex-end;
+  margin-right: 10px;
+}
+
+/* Main content adjusts dynamically */
+.main-content {
+  flex-grow: 1;
+  transition: margin-left 0.3s ease;
+}
+
+.sidebar-collapsed + .main-content {
+  margin-left: 80px; /* Matches collapsed width */
+}
+
+.sidebar-expanded + .main-content {
+  margin-left: 250px; /* Matches expanded width */
+}
+
+
+/* searchbar */
+.searchbar-container {
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Input box takes up 60% width, and the remaining 40% is for select box */
+.search-input {
+  padding: 0.75rem;
+  font-size: 1rem;
+  border-radius: 4px;
+}
+
+.search-input:not(.filter-status) {
+  width: 60%;
+}
+
+
+.filter-status-container {
+  display: flex;
+  flex-direction: column; /* Ensures the label and select box stack properly */
+  justify-content: center;
+  width: 45%;
+}
+
+/* Toggle icon styling */
+.toggle-icon {
+  font-size: 1.5rem;
+  color: #007bff;
+  margin-left: 10px;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 768px) {
+  .searchbar-container {
+    padding: 1rem;
+  }
+
+  .d-flex {
+    flex-wrap: wrap;
+  }
+
+  /* Ensure the select box and input expand to full width on small screens */
+  .search-input {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .filter-status-container {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+
+  .btn {
+    width: 100%;
+    margin-bottom: 0.5rem;
+  }
+
+  .toggle-icon {
+    margin-bottom: 0.5rem;
+  }
+}
+
+
+/* Styling for table with consistent full-height box shadow */
+.table-container {
+  padding-top: 20px; 
+  margin-top: 20px; /* Add spacing between SearchBar and table */
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  /* padding: 1rem; */
+  min-height: 400px; /* Ensure consistent height */
+  display: flex;
+  flex-direction: column;
+}
+
+/* pagination */
+
+/* Pagination container */
+.custom-pagination {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+/* Pagination button */
+.custom-page-item {
+  margin: 0 5px;
+}
+
+.custom-page-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* Increase width for longer text */
+  height: 50px; /* Ensure circular shape */
+  border-radius: 50%; /* Circular shape */
+  background-color: #f0f0f0; /* Default background color */
+  color: #333; /* Default text color */
+  text-decoration: none;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  border: 1px solid #ddd;
+  font-size: 0.9rem; /* Adjust font size */
+}
+
+/* Hover effect */
+.custom-page-link:hover {
+  background-color: black; /* Hover background color */
+  color: #fff; /* Hover text color */
+}
+
+/* Active page styling */
+.custom-active .custom-page-link {
+  background-color: black; /* Active background color */
+  color: #fff; /* Active text color */
+  border: 1px solid #007bff;
+}
+
+/* Adjust Previous and Next button styles */
+.custom-page-link.previous,
+.custom-page-link.next {
+  width: auto; /* Allow auto width for text */
+  padding: 0 15px; /* Add padding for text spacing */
+  border-radius: 20px; /* Rounded corners instead of circular for long text */
+}
+
+/* active and deactive checkbox */
+/* input#flexSwitchCheckChecked.form-check-input{
+  background-color: black;
+  color: white;
+} */
+
+
+
+
